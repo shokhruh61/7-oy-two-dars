@@ -21,26 +21,26 @@ function Home() {
 
   return (
     <div className="mt-5">
-      <div className="flex mx-auto flex-wrap w-[800px] items-center justify-center gap-8 bg-lime-500 p-6 rounded-2xl">
+      <div className="flex mx-auto flex-wrap w-[400px] items-center justify-center gap-8 bg-black p-6 rounded-2xl">
         <div className="flex flex-col items-center border p-3 rounded-lg">
           <h2 className="text-2xl text-white font-semibold">Counter 1</h2>
           <p className="text-xl font-bold text-white">{counter1}</p>
           <div className="flex gap-4 mt-4">
             <button
               onClick={() => handleIncrement(counter1, setCounter1)}
-              className="btn btn-sm"
+              className="btn btn-sm text-white "
             >
               +
             </button>
             <button
               onClick={() => handleDecrement(counter1, setCounter1)}
-              className="btn btn-sm"
+              className="btn btn-sm text-white "
             >
               -
             </button>
             <button
               onClick={() => handleReset(setCounter1)}
-              className="btn btn-sm"
+              className="btn btn-sm text-white "
             >
               Reset
             </button>
@@ -95,7 +95,7 @@ function Home() {
           </div>
         </div>{" "}
         <br />
-        <div className="text-3xl text-white font-semibold">Total: {total}</div>
+        <div className="text-3xl text-white font-semibold">c-ted: {total}</div>
       </div>
     </div>
   );
