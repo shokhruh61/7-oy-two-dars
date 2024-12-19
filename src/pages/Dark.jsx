@@ -1,19 +1,29 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 
 function Dark() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className="flex justify-center items-center mt-5">
-      <label className="cursor-pointer flex items-center gap-2">
-        <span>{theme == "light" ? "Light Mode" : "Dark Mode"}</span>
-        <input
-          type="checkbox"
-          className="toggle toggle-lg"
-          onChange={toggleTheme}
-          checked={theme == "dark"}
-        />
-      </label>
+    <div className={darkMode ? "dark" : ""}>
+      <div className="w-[500px] mx-auto mt-[50px] bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+        <header className="p-4 shadow-md">
+          <div className="container mx-auto flex justify-between items-center">
+            <h1 className="text-lg font-bold">Dark Mode</h1>
+            <button
+              className="px-4 py-2 bg-blue-500 dark:bg-green-500 text-white dark:text-gray-900 rounded transition-colors duration-300"
+              onClick={() => setDarkMode(!darkMode)}
+            >
+              {darkMode ? "Light Mode" : "Dark Mode"}
+            </button>
+          </div>
+        </header>
+        <main className="container mx-auto p-4">
+          <p>
+            Bu sahifa Tailwind CSS va React yordamida yaratilgan. Dark va Light
+            mode funksiyasi ishlaydi.
+          </p>
+        </main>
+      </div>
     </div>
   );
 }
