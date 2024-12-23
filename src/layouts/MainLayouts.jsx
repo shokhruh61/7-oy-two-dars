@@ -11,6 +11,7 @@ function MainLayouts({ children }) {
                     <Link className='bg-green-500 py-2 px-3 text-white rounded-md transform active:scale-[0.95]' to='/todo'>Todo</Link>
                     <Link className='bg-green-500 py-2 px-3 text-white rounded-md transform active:scale-[0.95]' to='/Api'>Api</Link>
                     <Link className='bg-green-500 py-2 px-3 text-white rounded-md transform active:scale-[0.95]' to='/Dark'>Dark</Link>
+                    <Link className='bg-green-500 py-2 px-3 text-white rounded-md transform active:scale-[0.95]' to='/form'>Form</Link>
                 </div>
                 <div>
                     <button className='bg-green-500 py-2 px-7 rounded-md text-2xl text-white '>Ok</button>

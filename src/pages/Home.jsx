@@ -25,7 +25,7 @@ function Home() {
         <div className="flex flex-col items-center border p-3 rounded-lg">
           <h2 className="text-2xl text-white font-semibold">Counter 1</h2>
           <p className="text-xl font-bold text-white">{counter1}</p>
-          <div className="flex gap-4 mt-4">
+          <div className="flex justify-between gap-4 mt-4">
             <button
               onClick={() => handleIncrement(counter1, setCounter1)}
               className="btn btn-sm text-white "
@@ -49,7 +49,7 @@ function Home() {
         <div className="flex flex-col items-center border p-3 rounded-lg">
           <h2 className="text-2xl font-semibold text-white">Counter 2</h2>
           <p className="text-xl font-bold text-white">{counter2}</p>
-          <div className="flex gap-4 mt-4">
+          <div className="flex justify-between gap-4 mt-4">
             <button
               onClick={() => handleIncrement(counter2, setCounter2)}
               className="btn btn-sm"
@@ -73,7 +73,7 @@ function Home() {
         <div className="flex flex-col items-center border p-3 rounded-lg">
           <h2 className="text-2xl font-semibold text-white">Counter 3</h2>
           <p className="text-xl font-bold text-white">{counter3}</p>
-          <div className="flex gap-4 mt-4">
+          <div className="flex items-center justify-between gap-4 mt-4">
             <button
               onClick={() => handleIncrement(counter3, setCounter3)}
               className="btn btn-sm"
